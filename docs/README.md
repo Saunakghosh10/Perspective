@@ -11,7 +11,6 @@ The integration provides a FastAPI-based API for storing and retrieving semantic
 ### 1. Store Document (`POST /store`)
 Stores a document's text and its semantic embedding in Chroma.
 
-![Store Document Endpoint](./images/store_endpoint.png)
 
 Example request:
 ```json
@@ -27,7 +26,6 @@ Example request:
 ### 2. Search Similar Documents (`POST /search`)
 Search for documents similar to the query text based on embeddings.
 
-![Search Documents Endpoint](./images/search_endpoint.png)
 
 Example request:
 ```json
@@ -40,7 +38,6 @@ Example request:
 ### 3. Health Check (`GET /health`)
 Check if the API and database are healthy.
 
-![Health Check Endpoint](./images/health_endpoint.png)
 
 ## Implementation Details
 
@@ -64,9 +61,3 @@ uvicorn app.main:app --reload
 3. Visit http://127.0.0.1:8000/docs for interactive API documentation
 
 ## Screenshots
-
-### API Documentation
-![API Documentation](./images/api_docs.png)
-
-### Example Responses
-![Example Response](./images/example_response.png) 
